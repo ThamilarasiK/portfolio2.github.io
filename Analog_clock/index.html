@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        *{
+            font-size: 55px; 
+        }
+        #time{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 280px;
+            color:blue;
+            font-family:fantasy;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="time">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="ampm"></span>
+    </div>
+    <script>
+        function digital_clock(){
+            let clock = new Date();
+            let hr = clock.getHours();
+            let min = clock.getMinutes();
+            let sec = clock.getSeconds();
+            let ampmresult;
+            
+            if(hr<12)
+                ampmresult="AM";
+            else
+                ampmresult="PM";
+                
+            ampm.innerHTML=ampmresult;
+            let hours = document.querySelector("#hours");
+            if(hr>12)
+            hr=hr-12;
+            if(hr<10)
+            hr="0"+hr;
+            hours.innerHTML=hr;
+
+            let minutes = document.querySelector("#minutes");
+            if(min<10)
+            min="0"+min;
+            minutes.innerHTML=min;
+            
+            let seconds = document.querySelector("#seconds");
+            if(sec<10)
+            sec="0"+sec; 
+            seconds.innerHTML=sec;
+           
+        }
+        setInterval(digital_clock,1000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,508 @@
+* {
+    background-color: aliceblue;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+  }
+  
+  .header {
+    position: fixed;
+    height: 13vh;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+    background: transparent;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+  }
+  html::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  html::-webkit-scrollbar-track {
+    background: aliceblue;
+  }
+  html::-webkit-scrollbar-thumb {
+    background: rgb(142, 190, 233);
+    border-radius: 5rem;
+  }
+  
+  section {
+    height: 85vh;
+    background: transparent;
+  }
+  
+  .nav-bar {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(198, 227, 252);
+    align-content: center;
+  }
+  .options {
+    background-color: aliceblue;
+    padding-left: 55%;
+    height: 40px;
+    align-content: center;
+  }
+  #link {
+    background-color: aliceblue;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  #link:hover {
+    font-family: fantasy;
+  }
+  .name {
+    position: absolute;
+    background-color: aliceblue;
+    padding-top: 6px;
+    padding-left: 100px;
+    font-size: 22px;
+    color: indigo;
+  }
+  .homebody {
+    background-image: url("background1.jpg");
+    background-size:cover;
+    height: 87vh;
+    margin-top: 11vh;
+  }
+  .profileimg {
+    display: flex;
+    position: relative;
+    justify-items: right;
+    background-image: url("photo.jpg");
+    border-radius: 50%;
+    background-color: red;
+    height: 350px;
+    width: 350px;
+    margin-left: 60%;
+    margin-top: 3%;
+    top: 40px;
+    box-shadow: 0px 0px 20px 2px rgb(165, 212, 253);
+  }
+  .profileimg:hover {
+    box-shadow: 0px 0px 20px 10px rgb(165, 212, 253);
+    transition: 0.5s;
+  }
+  #name {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    font-size: 35px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: transparent;
+  }
+  .web {
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    font-size: 19px;
+    margin-top: 200px;
+    margin-left: 100px;
+    background-color: transparent;
+  }
+  .resume{
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .btn {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background: linear-gradient(
+      rgb(209, 232, 252),
+      rgb(140, 199, 253),
+      rgb(95, 174, 243)
+    );
+    margin-left: 100px;
+    position: relative;
+    bottom: 110px;
+    border: 1.5px solid rgb(59, 157, 242);
+    background-color: transparent;
+    font-weight: bolder;
+    color: darkblue;
+  }
+  .btn:hover {
+    box-shadow: 0px 1px 10px 0px rgb(181, 218, 250);
+    transition: 0.2s;
+    height: 41px;
+    width: 151px;
+  }
+  .links {
+    height: 50px;
+    width: 250px;
+    margin-left: 100px;
+    position: absolute;
+    margin-top: -70px;
+    background-color: transparent;
+  }
+  #page {
+    padding: 18px;
+    background-color: rgb(222, 238, 252);
+    border: 2px solid rgb(59, 157, 242);
+    border-radius: 30%;
+  }
+  #page:hover {
+    background-color: rgb(220, 236, 252);
+    box-shadow: 0px 10px 10px 0px rgb(181, 218, 250);
+    padding: 20px;
+    transition: 0.2s;
+  }
+  /* contact page */
+  .box {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(222, 238, 252);
+    bottom: 2px;
+    position: absolute;
+    left: 100px;
+    top: 3610px;
+  }
+  .circle {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(222, 238, 252);
+    bottom: 150px;
+    position: absolute;
+    border-radius: 50%;
+    left: 100px;
+    top: 3470px;
+  }
+  .profilecontact {
+    position: absolute;
+    left: -630px;
+    height: 290px;
+    width: 290px;
+    bottom: 150px;
+    background-image: url("srav.png");
+    top: 3430px;
+  }
+  .headcontact {
+    height: 100px;
+    width: 300px;
+    font-size: 50px;
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 50px;
+    font-family: "Lucida Handwriting", cursive;
+  }
+  .contactlist {
+    height: 30px;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 450px;
+    font-size: 18px;
+  }
+  /* about */
+  .headingabout {
+    font-size: 50px;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-family: "Lucida Handwriting", cursive;
+  }
+  .contentabout {
+    font-size: 18px;
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 600px;
+    text-align: justify;
+  }
+  .photoabout {
+    position: absolute;
+    top: 650px;
+    left: 800px;
+    height: 290px;
+    width: 290px;
+    background-image: url("graduationpiccopy.jpeg");
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: -5px 20px 20px 5px white, -20px 20px 0px 10px rgb(199, 226, 250),
+      0px 0px 10px 15px white;
+  }
+  
+  /* education */
+  .eduheading {
+    font-size: 50px;
+    font-family: "Lucida Handwriting", cursive;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+  .educontent {
+    margin-left: 200px;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .iconedu1 {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 22px;
+  }
+  .iconedu2 {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 2px;
+  }
+  .iconedu3 {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 2px;
+  }
+  .eduimg {
+    position: absolute;
+    background-image: url("demoimg.jpg");
+    height: 350px;
+    width: 350px;
+    margin-left: 750px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 30px 10px rgb(222, 238, 252);
+  }
+  
+  /* Projects */
+  .projectheading {
+    font-size: 50px;
+    font-family: "Lucida Handwriting", cursive;
+    margin-left: 70px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+  
+  .slider {
+    height: 250px; /* Fixed height for the slider */
+    width: 90%; /* Full width for the slider */
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+    display: grid;
+    place-items: center;
+  }
+  
+  .slide-track {
+    display: flex;
+    width: calc(350px * 16); /* Adjusted width of the slide track for larger images */
+    animation: scroll 20s linear infinite; /* CSS animation for sliding effect */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-350px * 8)); /* Adjust based on the number of slides */
+    }
+  }
+  
+  .slide {
+    height: 200px; /* Fixed height for each slide */
+    width: 350px; /* Fixed width for each slide considering the bigger images */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 5px; /* Adjust as necessary */
+    perspective: 100px;
+    margin: 15px;
+  }
+  
+  .pimg {
+    width: 100%; /* Ensure the image takes the full width of the slide */
+    height: auto; /* Maintain aspect ratio */
+  }
+  /* .pimg:hover,.textpro:hover {
+    transform: translateZ(40px);
+    transition: transform 1%; 
+  } */
+  .slide:hover{
+    box-shadow: 0px 10px 30px 10px rgb(181, 218, 250);
+    margin: 10px;
+    transition-duration: 0.3s;
+  }
+  .textpro{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(222, 238, 252);
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: none;
+  }
+  .prolink{
+    text-decoration: none;
+  }
+  
+  /* skills */
+  #skills_heading {
+    font-size: 50px;
+    font-family: "Lucida Handwriting", cursive;
+    margin-left: 70px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+  #skills_subH {
+    font-size: 25px;
+    font-family: "Lucida Handwriting", cursive;
+    margin-left: 70px;
+  }
+  #skillslist li {
+    font-size: 18px;
+    margin-left: 70px;
+    margin-bottom: 2px;
+  }
+  #skillslist1 li {
+    font-size: 18px;
+    margin-left: 370px;
+    margin-bottom: 2px;
+    position: relative;
+    top: -75px;
+  }
+  #skill_img {
+    position: absolute;
+    top: 1150px;
+    left: 800px;
+    height: 290px;
+    width: 290px;
+    background-image: url("skill_blub_img.png");
+    border-radius: 40px;
+    box-shadow: -5px 20px 20px 5px white, -20px 20px 0px 10px rgb(199, 226, 250),
+      0px 0px 10px 15px white;
+  }
+  
+  /* section tags */
+  
+  #contactdetailssection{
+    padding-bottom: 250px;
+  }
+  .footersection {
+    height: 20vh;
+    background-color: rgb(222, 238, 252);
+    text-align: center;
+    margin-top:-80px; 
+  }
+  
+  /* footer section */
+  .share {
+    background-color: rgb(222, 238, 252);
+  }
+  .share a {
+    position: relative;
+    color: black;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 5rem;
+    margin: 10px;
+    margin-bottom: 30px;
+  }
+  .share a:hover {
+    box-shadow: 0px 1px 10px 0px rgb(31, 103, 167);
+    transition: 0.2s;
+  }
+  .linksfooter {
+    position: relative;
+    height: 30px;
+    width: 90%;
+    background-color: rgb(222, 238, 252);
+    margin-left: 50px;
+  }
+  .linksfooter a {
+    position: relative;
+    font-size: 25px;
+    color: darkblue;
+    background-color: rgb(222, 238, 252);
+    margin: 10px;
+    bottom: 20px;
+    text-decoration: none;
+  }
+  .linksfooter a:hover {
+    font-family: fantasy;
+  }
+  
+  /****** contact details ******/
+  
+  .condetheading {
+    font-size: 50px;
+    font-family: "Lucida Handwriting", cursive;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  
+  #conddelimg{
+    position: absolute;
+    background-image: url("callcenter.png");
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
+    margin-top: 65px;
+    box-shadow: 0px 0px 30px 20px white,
+    0px 0px 30px 10px rgb(222, 238, 252);
+  }
+  
+  .innerform {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 600px;
+  }
+  
+  /* Form input container styles */
+  .condet {
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: white;
+  }
+  
+  /* Input field styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="url"],
+  textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Checkbox input styles */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Submit button styles */
+  .submitbtn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(145, 195, 238);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  
+  /* Submit button hover effect */
+  .submitbtn:hover {
+    background-color: rgb(109, 156, 198);
+  }
+  
+  
+  

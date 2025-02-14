@@ -1,0 +1,51 @@
+*{
+
+    background-color: rgb(149, 156, 156);
+ }
+ .converter{
+     color: black;
+     text-align: center;
+ }
+ .converter{
+     background-color: rgb(253, 235, 238);
+     height: 400px;
+     width: 500px;
+     margin: auto;
+     border: 2px solid rgb(20, 20, 20);
+     box-shadow: 0px 0px 10px 10px rgb(218, 111, 129);
+     margin-top: 50px;
+ }
+ h1{
+     font-size: 25px;
+     text-align: center;
+     padding-top: 30px;
+     text-decoration: underline;
+     font-family: fantasy;
+     background-color: rgb(253, 235, 238);
+     color: blue;
+ }
+ h1:hover{
+     color: red;
+ }
+ 
+ #converter{
+     position: absolute;
+     background-color: rgb(12, 8, 9);
+     margin:100px;
+ }
+ button{
+     margin-top: 40px;
+     padding-top: 10px;
+     text-align: center;
+     color:rgb(3, 17, 4);
+     text-size-adjust: 0px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ #minutes{
+     color: rgb(12, 6, 6);
+     font-size: 30px;
+ }
+ #result{
+     color: rgb(231, 24, 10);
+     font-size: 30px;
+ }
