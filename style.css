@@ -71,11 +71,14 @@
     height: 87vh;
     margin-top: 11vh;
   }
-  .profileimg {
+.profileimg {
     display: flex;
     position: relative;
-    justify-items: right;
-    background-image: url("photo.jpg");
+    justify-content: center;
+    align-items: center;
+    background-image: url("photo.jpg.jpeg"); 
+    background-size: cover; 
+    background-position: center; 
     border-radius: 50%;
     background-color: red;
     height: 350px;
@@ -84,11 +87,13 @@
     margin-top: 3%;
     top: 40px;
     box-shadow: 0px 0px 20px 2px rgb(165, 212, 253);
-  }
-  .profileimg:hover {
+}
+
+.profileimg:hover {
     box-shadow: 0px 0px 20px 10px rgb(165, 212, 253);
     transition: 0.5s;
-  }
+}
+
   #name {
     height: 100px;
     width: 300px;
